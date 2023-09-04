@@ -1,0 +1,24 @@
+int led = 4;
+int pinBoton=2;
+int estado;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(led, OUTPUT);
+  pinMode(pinBoton, INPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  estado=digitalRead(pinBoton);
+  if(estado==0) //compara el valor de estado con 0
+  {
+    difitalWrite(4, LOW);
+    delay(1000);
+  } else 
+   {
+    digitalWrite(4, HIGH);
+    delay(1000);
+    }
+  
+}
