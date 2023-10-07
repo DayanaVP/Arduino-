@@ -1,0 +1,19 @@
+Binario
+Compuertas
+
+Digital:
+- Discreta -> 0-1
+- presición finita: 8 bits  (256 posibles valores)
+- Eficiente en el almacenamiento
+- No se ven afectados por el ruido (menor escala)
+Analógico:
+- Representación continua de datos, toma valores dentro de un rango
+- Precisión infinita, limitada por la resolucion del sistema de medición 
+- Ruido y degradación, se puede ver afectada por el ruido
+- Almacenamiento y transmisión de datos, puede bajar su calidad
+ Lectura:
+  int valor = analogRead(A0);
+ Escritura analógica PWM(Pulse Width Modulation/Modulación por ancho de pulso)
+  valor (0 a 255)
+ analogWrite(pin,valor=127); 50%
+ pin tiene que tener ~~~~~~
